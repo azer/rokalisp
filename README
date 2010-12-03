@@ -1,0 +1,19 @@
+Roka-Lisp is a new lisp dialect written in Javascript, with support for
+both serverside and clientside. Its main aim is to provide a pure
+functional, Javascript interoperable language for the coders who want to
+program the web using LISP.
+
+Currently it's under development and supports basic data structures of
+Javascript. Here is a full list of the types Roka Lisp (will) support:
+
+  + Undefined
+  + Null
+  + Boolean
+  + Numbers
+  + Array
+  + S-Expressions
+  + Symbol
+  - HashTable
+  - Regular Expressions
+
+vim: tw=75

@@ -1,0 +1,16 @@
+#!/usr/local/bin/node
+
+var lisp = require('../src/lisp'),
+    readFile = require('fs').readFile,
+    puts = require('sys').puts;
+
+global.puts = puts;
+
+process.argv.slice(2).forEach(function(fl){
+  
+  readFile(fl,function(err,ctx){
+    if(err) throw err;
+    lisp.evaluate(lisp.read(lisp.tokenize(ctx)));
+  });
+
+});
