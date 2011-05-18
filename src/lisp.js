@@ -45,3 +45,8 @@ function tokenize(input){
 };
 
 var tokenizer = /\s*([()]|[\{\}]|[\[\]]|"(?:[\\].|[^\\"])*"|;.*|[^\s'"`,;\[\]\{\}()]*)([\s\S]*)/;
+
+module.exports = {
+  'tokenize':tokenize,
+  'read':read
+}
